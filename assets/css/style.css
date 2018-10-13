@@ -1,0 +1,76 @@
+@font-face {
+    font-family:"INVASION";
+    src: url("../Font/INVASION2000.TTF") format("truetype"), 
+     url("../Font/INVASION2000.TTF") format("truetype");
+
+}
+.jumbotron {
+    opacity: .75;
+}
+
+p {
+    font-family: INVASION;
+    font-size: 19px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: INVASION;
+    font-size: 20px;
+    background-image: url("../images/wallhaven-650532.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    color: #09a6e4;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 40% 1fr;
+}
+
+
+
+#instructions{
+    grid-column: 1/2;
+    padding: 20px;
+}
+
+#score{
+    grid-column: 2/3;
+    grid-row: 1/5;
+    padding: 20px 20px 20px 20px;
+}
+.arnold-icon{
+    height: 180px;
+    width: 180px;
+    padding-top:0;
+    padding: 10px;
+    background-color: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 15px;
+    background-size:175%;
+    border: 15px;
+    border-color: aqua;
+    
+
+}
+
+#Arnold-1{
+    background-image: url("../images/conan-the-barbarian-1982.jpg");
+    
+    
+}
+#Arnold-2{
+    background-image: url("../images/arnold-schwarzenegger-terminator.jpg")
+}
+#Arnold-3{
+    background-image: url("../images/batman-robin-1997.jpg")
+}
+#Arnold-4{
+    background-image: url("../images/kindergarten-cop-1990.jpg")
+}

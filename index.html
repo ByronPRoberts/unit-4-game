@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Byron's Unit 4 Game</title>
+
+
+<!-- bootstrap link-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!-- Css link-->
+<link rel = "stylesheet" type="text/css" media="screen" href ="assets/css/style.css">
+<!-- reset link-->
+<link rel = "stylesheet" href ="assets/css/reset.css">
+</head>
+<body>
+    <div class="container" id="start-display">
+        <div class="jumbotron">
+            <h2> The Schwarzenegger Collector!</h2>
+            
+            <p>You will be given a random numer at the start of the game.</p>
+
+            <p>There are four Arnolds below. By clicking on a Arnold you will add a specific amount of points to your total score</p>
+        
+            <p>You will win the game by matching your total score to a random number. You will lose the game if your total score goes above the random number</p>
+        
+            <p> The value of each Arnold is hidden from you until you click on it.</p>
+        
+            <p>Each time when the game starts, the game will change the value of each Arnold</p>
+
+                <button id="Start-Button">Start</button>
+
+
+
+
+
+        </div>
+    </div>
+<div class="container">
+    <div id="score">
+    <h2 id="computerNumber">Your Target: </h2>
+    <h4 id="wins">Wins: </h4>
+    <h4 id="losses">Losses: </h4>  
+                        
+
+
+    <div id="arnolds">
+
+    <ul id="arnoldss-li">
+        <button id="Arnold-1" class="arnold-icon"></button>
+        <button id="Arnold-2" class="arnold-icon"></button>
+        <button id="Arnold-3" class="arnold-icon"></button>
+        <button id="Arnold-4" class="arnold-icon"></button>
+    </ul>
+      
+        <h3 id="">Your total score is: <span id="yourTotal" data-num=""></span> </h3> 
+      </div>
+  </div>
+
+</div>
+
+
+
+
+    <!-- make a fighting area here/where the selected pictures move too
+    <div class="row display-none" id= "arena">
+        <div class="column" id="spot-one">
+            <span id="player">Player</span>
+        </div>
+        <div class="column">
+           
+            <span id="player-health">Player Health</span>
+            <span id="opponent-health">Opponent Health</span>
+            
+            <button id="attack">Attack</button>
+        </div>
+
+        <div class="column" id="spot-two">
+            <span id= "opponent">Opponent</span>
+        </div>
+    </div>
+
+
+
+    
+
+    
+
+
+    <div class="row display-none" id= "player-select-area">
+        <!-- <div class="char-container" id="terminator-containter">
+            <img src="assets/images/arnold-schwarzenegger-terminator.jpg" alt="terminate" class= "char-container-img">
+            <button class="arnold-select-button" id="terminator-button">T-800</button>
+        </div>
+        <div class="char-container" id="freeze-containter">
+            <img src="assets/images/batman-robin-1997.jpg" alt="froze" class= "char-container-img">
+            <button class="arnold-select-button" id="freeze-button">Mr. Freeze</button>
+        </div>
+        <div class="char-container" id="conan-containter">
+            <img src="assets/images/conan-the-barbarian-1982.jpg" alt="barbarian" class= "char-container-img">
+            <button class="arnold-select-button" id="conan-button">Conan</button>
+        </div>
+        <div class="char-container" id="cop-containter">
+            <img src="assets/images/kindergarten-cop-1990.jpg" alt="daddy" class= "char-container-img">
+            <button class="arnold-select-button" id="cop-button">Kindergarten Cop</button>
+        </div> -->
+    <!-- </div>
+     -->
+
+    <!-- <div class="modal display-none" id="start-modal">
+        <div class="begin-btn-container">
+            <p class="modal-text">Round: 1</p>
+            <button id="begin-btn">Start!</button>
+        </div>
+    </div>
+
+    <div class="modal display-none" id="win-modal">
+        <div class="begin-btn-container">
+            <p class="modal-text"></p>
+            <button class="play-again-btn">Play Again!</button>
+        </div>
+    </div>
+
+    <div class="modal display-none" id="next-defender-modal">
+        <div class="begin-btn-container">
+            <p class="modal-text">Choose Next Defender</p>
+            <button id="next-defender-btn">go!</button>
+        </div>
+    </div> --> 
+
+
+<audio class="audio" id="game-over">
+    <source src="http://peal.io/p/game-over" type="audio/mpeg"> 
+</audio>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="assets/javascript/game.js"></script>
+    
+</body>
+</html>
